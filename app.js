@@ -14,13 +14,13 @@ restart.addEventListener('click', startGame)
 // nextGame();
 
 function startGame(game) {
-
+    
     document.querySelector('#game').style.display = 'flex';
     let h2 = document.querySelector('h2');
     let size = 2;
     let field = document.querySelector('.field');
     let round = document.querySelector('.round');
-    
+ 
     round.innerHTML = `Уровень 1`;
     h2.innerHTML = `Найди числа по возрастанию от 1 до 4`;
     // 
@@ -32,6 +32,7 @@ function startGame(game) {
             clearGame(field); //очищаем игровое поле
             var cells = drawGameField(size, field); //рисуем игровое поле
             paintClick(cells); //активируем игровое поле
+            x = 20;
             // 
 
         }
@@ -77,6 +78,7 @@ function startGame(game) {
 
 countdown(); 
 function countdown(){  
+ 
     var timer = document.getElementById('timer');
   timer.innerHTML = `Осталось ${x} секунд`;
   x--; 
