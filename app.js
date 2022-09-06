@@ -36,7 +36,7 @@ function startGame(game) {
             // 
 
         }
-
+// порядок цифр
         function paintClick(cells) {
             let counter = 1;
             
@@ -75,7 +75,7 @@ function startGame(game) {
 }
 
 
-
+// запускаем таймер
 countdown(); 
 function countdown(){  
  
@@ -101,7 +101,7 @@ console.log(x)
 function clearGame(field) {
     field.innerHTML = '';
 }
-
+// создаем игровое поле
 function drawGameField(size, field) {
     let from = 1;
     let to = size * size;
@@ -118,7 +118,7 @@ function drawGameField(size, field) {
 
 
 
-
+// создаем массив
 function createCells(arr, item) {
     var cells = [];
     

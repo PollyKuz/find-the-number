@@ -15,8 +15,18 @@
  
     background-color: #ccaedcd9;
 }
-
-
+p {
+    text-align: center;
+    margin: 50px;
+    color: white;
+}
+#start {
+    text-decoration: none !important;
+    text-align: center;
+    width: calc(100% - 70px);
+   font-size: 25px;
+   margin: 10px;
+}
 
 body {
     background-image: url(img/bcg.jpg);
