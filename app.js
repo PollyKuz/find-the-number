@@ -4,7 +4,7 @@ startGame(document.querySelector('#game'));
 let round = document.querySelector('.round');
 
 let timer; 
-var x = 10; 
+var x = 20; 
 let wrapper = document.querySelector('.wrapper');
 let loser = document.querySelector('.loser');
 
@@ -14,7 +14,7 @@ restart.addEventListener('click', startGame)
 // nextGame();
 
 function startGame(game) {
-    x = 10;
+
     document.querySelector('#game').style.display = 'flex';
     let h2 = document.querySelector('h2');
     let size = 2;
@@ -54,7 +54,7 @@ function startGame(game) {
                         
                         
                         nextGame()
-                        x = 10 + Number(size * size);
+                        x = 40 + Number(size * size);
                         
                         round.innerHTML = `Уровень ${Math.sqrt(counter)}`;
                         
